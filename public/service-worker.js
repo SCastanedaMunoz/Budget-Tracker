@@ -1,12 +1,13 @@
 const FILES_TO_CACHE = [
     "/",
     "/css/styles.css",
+    "/icons/icon-192x192.png",
     "/icons/icon-512x512.png",
 
     "/dist/bundle.js",
 
-    "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.css",
-    "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
+    "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+    "https://cdn.jsdelivr.net/npm/chart.js@2.8.0",
 ];
 
 const STATIC_CACHE = "static-cache-v1";
