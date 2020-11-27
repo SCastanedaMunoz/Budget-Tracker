@@ -1,3 +1,5 @@
+const saveRecord = require('./db').saveRecord;
+
 let transactions = [];
 let myChart;
 
@@ -134,7 +136,8 @@ function sendTransaction(isAdding) {
       amountEl.value = "";
     }
   })
-  .catch(err => {
+    .catch(err => {
+      console.log("This Failed So Lets Save in The DB");
     // fetch failed, so save in indexed db
     saveRecord(transaction);
 
